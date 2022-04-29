@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 import { ReactNode, useMemo } from 'react';
 import { useQuery } from 'react-query';
 
-import { spdxLicenseDataAPI } from '@/axios';
+import { spdxLicenseDataAPI } from '@/utils/axios';
 import { MetadataKeys } from '@/context/plugin';
 import {
   FILTER_OS_PATTERN,
@@ -15,7 +15,7 @@ import { SpdxLicenseResponse } from '@/store/search/types';
 import { PluginType, PluginWriterSaveLayer } from '@/types';
 import { formatOperatingSystem } from '@/utils';
 
-import { Link } from '../common/Link';
+import { Link } from '@/components/Link';
 import styles from './MetadataList.module.scss';
 import { MetadataListTextItem } from './MetadataListTextItem';
 
